@@ -1,0 +1,48 @@
+{
+  "name": "freshdesk-messaging-facade",
+  "version": "1.0.0",
+  "description": "A faster Freshdesk Messaging (formerly Freshchat) Facade",
+  "homepage": "https://github.com/coliff/freshdesk-messaging-facade#readme",
+  "bugs": {
+    "url": "https://github.com/coliff/freshdesk-messaging-facade/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coliff/freshdesk-messaging-facade.git"
+  },
+  "funding": {
+    "type": "PayPal",
+    "url": "https://paypal.me/coliff"
+  },
+  "license": "MIT",
+  "author": "Christian Oliff (https://christianoliff.com)",
+  "files": [
+    "css/*",
+    "js/*",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "npm run css && npm run js",
+    "css": "npm run css-lint && npm run css-minify",
+    "css-lint": "stylelint \"css/*.css\" --fix",
+    "css-minify": "cleancss --format breakWith=lf --output css/freshdesk-messaging-facade.min.css css/freshdesk-messaging-facade.css",
+    "js": "npm run js-lint && npm run js-minify",
+    "js-lint": "eslint js/freshdesk-messaging-facade.js",
+    "js-minify": "terser --keep-classnames --keep-fnames --output js/freshdesk-messaging-facade.min.js -- js/freshdesk-messaging-facade.js",
+    "prettier": "prettier --write \"*.*\"",
+    "test": "npm run css-lint && npm run js-lint"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.4.1",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^22.0.0",
+    "terser": "^5.9.0"
+  }
+}

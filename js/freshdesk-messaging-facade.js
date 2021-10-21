@@ -1,0 +1,58 @@
+/*!
+ * Freshdesk Messaging Facade v1.0.0 (https://github.com/coliff/freshdesk-messaging-facade)
+ */
+
+// it's hidden by default for browsers with JavaScript disabled
+// this removes the hidden attribute
+document.getElementById("freshdesk-messaging-facade").removeAttribute("hidden");
+
+class FreshchatFacade extends HTMLElement {
+  connectedCallback() {
+    this.siteId = this.getAttribute("data-siteid");
+    this.token = this.getAttribute("data-token");
+
+    this.addEventListener("pointerover", FreshchatFacade.warmConnections, {
+      once: true,
+    });
+
+    this.addEventListener("pointerover", (e) => this.addScript());
+  }
+
+  // Add a <link rel=preconnect ...> to the head
+  static addPrefetch(kind, url, as) {
+    const linkEl = document.createElement("link");
+    linkEl.rel = kind;
+    linkEl.href = url;
+    if (as) {
+      linkEl.as = as;
+    }
+    document.head.append(linkEl);
+  }
+
+  static warmConnections() {
+    if (FreshchatFacade.preconnected) return;
+    FreshchatFacade.addPrefetch("preconnect", "https://wchat.freshchat.com");
+    FreshchatFacade.addPrefetch("preconnect", "https://assetscdn-wchat.freshchat.com");
+    FreshchatFacade.preconnected = true;
+  }
+
+  addScript() {
+    const script = document.createElement("script");
+    script.src = "https://wchat.freshchat.com/js/widget.js";
+    document.head.append(script);
+
+    fcWidget.init({
+      token: this.token,
+      host: "https://wchat.freshchat.com",
+      siteId: this.siteId,
+      config: {
+        headerProperty: {
+          hideChatButton: false,
+        },
+      },
+    });
+  }
+}
+
+// Register custom element
+customElements.define("freshdesk-messaging-facade", FreshchatFacade);
