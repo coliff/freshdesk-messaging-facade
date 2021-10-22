@@ -41,6 +41,16 @@ class FreshchatFacade extends HTMLElement {
     script.src = "https://wchat.freshchat.com/js/widget.js";
     document.head.append(script);
 
+    // hide the button if script fails to load
+    script.onerror = function () {
+      document.getElementById("freshdesk-messaging-facade").setAttribute("hidden", "hidden");
+    };
+
+    // display a loading spinner when script is loading
+    script.onload = function () {
+      document.getElementById("freshdesk-messaging-icon").classList.add("freshdesk-messaging-icon-loading");
+    };
+
     fcWidget.init({
       token: this.token,
       host: "https://wchat.freshchat.com",

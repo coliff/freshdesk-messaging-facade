@@ -17,13 +17,11 @@ This facade (less than 1 KB gzipped!) prevents Freshdesk's JavaScript from loadi
 
 ## How it works
 
-A div with an inline SVG of the Freshdesk Messaging icon is displayed in the bottom corner - appearing just like the real thing. When a user hovers within 300 pixels of it loads the Freshdesk Messaging script.
-
-The Freshdesk Messaging widget and assets are large so it can take a couple of seconds for them to load.
+A div with an inline SVG of the Freshdesk Messaging icon is displayed in the bottom corner - appearing just like the real thing. When a user hovers within 300 pixels of it loads the Freshdesk Messaging script. A simple animated icon is displayed as the script loads.
 
 ## How to use
 
-1. Load the CSS in your head: `<link rel="stylesheet" href="css/freshdesk-messaging-facade.min.css" />`
+1. Load the CSS in your head: `<link rel="stylesheet" href="css/freshdesk-messaging-facade.min.css">`
 
 2. Add the script in your head: `<script src="js/freshdesk-messaging-facade.min.js" type="module" async></script>`
 
@@ -54,3 +52,14 @@ https://coliff.github.io/freshdesk-messaging-facade/
 - **Q. Does it work in IE 11?**
 
   A. No, but you can easily load the standard Freshdesk Messaging widget and add the `nomodule` attribute to it as a fallback for legacy browsers.
+
+## Known Issues
+
+- Some content blockers on iOS may block the real Freshdesk Messaging widget leading to the facade being non-functioning.
+
+- The Freshdesk Messaging widget and assets are large so it can take a couple of seconds for them to load.
+
+## Credits and thanks
+
+- This project is inspired by the [Lite YouTube Embed](https://github.com/paulirish/lite-youtube-embed) project by Paul Irish.
+- Thanks to Yoksel for the useful [SVG to CSS converter](https://yoksel.github.io/url-encoder/)
