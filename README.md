@@ -1,5 +1,7 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/coliff/freshdesk-messaging-facade/main/LICENSE)
 [![GitHub Super-Linter](https://github.com/coliff/freshdesk-messaging-facade/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![NPM Version](https://img.shields.io/npm/v/freshdesk-messaging-facade)](https://www.npmjs.com/package/freshdesk-messaging-facade)
+[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/freshdesk-messaging-facade/badge)](https://www.jsdelivr.com/package/npm/freshdesk-messaging-facade)
 
 # Freshdesk Messaging (formerly Freshchat) Facade
 
@@ -29,7 +31,7 @@ A div with an inline SVG of the Freshdesk Messaging icon is displayed in the bot
 
    ```htm
    <freshdesk-messaging-facade id="freshdesk-messaging-facade" data-token="" data-siteid="" hidden>
-     <div class="freshdesk-messaging-icon" tabindex="0" role="button"></div>
+     <div id="freshdesk-messaging-icon" tabindex="0" role="button"></div>
    </freshdesk-messaging-facade>
    ```
 
