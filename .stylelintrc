@@ -1,4 +1,6 @@
 {
   "extends": ["stylelint-config-standard"],
-  "rules": {}
+  "rules": {
+    "alpha-value-notation": null
+  }
 }
