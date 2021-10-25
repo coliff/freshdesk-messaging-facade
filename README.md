@@ -23,13 +23,16 @@ A div with an inline SVG of the Freshdesk Messaging icon is displayed in the bot
 
 ## How to use
 
-1. Load the CSS in your head: `<link rel="stylesheet" href="css/freshdesk-messaging-facade.min.css">`
+1. Load the CSS and JS in your head:
 
-2. Add the script in your head: `<script src="js/freshdesk-messaging-facade.min.js" type="module" async></script>`
+   ```html
+   <link rel="stylesheet" href="css/freshdesk-messaging-facade.min.css">
+   <script src="js/freshdesk-messaging-facade.min.js" type="module" async></script>
+   ```
 
-3. Load the web component within your page:
+2. Load the web component within your page:
 
-   ```htm
+   ```html
    <freshdesk-messaging-facade id="freshdesk-messaging-facade" data-token="" data-siteid="" hidden>
      <div id="freshdesk-messaging-icon" tabindex="0" role="button"></div>
    </freshdesk-messaging-facade>
@@ -45,7 +48,7 @@ https://coliff.github.io/freshdesk-messaging-facade/
 
 - **Q. How can I customize the chat widget's color?**
 
-  A. You can modify the `background-color` value of `.freshdesk-messaging-icon`.
+  A. You can modify the `background-color` value of `#freshdesk-messaging-icon`.
 
 - **Q. Can I load this from a CDN?**
 
