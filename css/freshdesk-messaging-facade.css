@@ -44,3 +44,7 @@
     opacity: 1;
   }
 }
+
+body.fc-widget-open #freshdesk-messaging-facade {
+  display: none;
+}

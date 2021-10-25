@@ -1,0 +1,22 @@
+{
+  "name": "coliff/freshdesk-messaging-facade",
+  "description": "A faster Freshdesk Messaging (formerly Freshchat) embed",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christian Oliff",
+      "homepage": "https://christianoliff.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/coliff/freshdesk-messaging-facade/issues",
+    "docs": "https://github.com/coliff/freshdesk-messaging-facade#readme"
+  },
+  "funding": [
+    {
+      "type": "PayPal",
+      "url": "https://paypal.me/coliff"
+    }
+  ]
+}

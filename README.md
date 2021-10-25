@@ -49,15 +49,15 @@ https://coliff.github.io/freshdesk-messaging-facade/
 
 - **Q. Can I load this from a CDN?**
 
-  A. Yep, it's available on [JSDelivr](https://cdn.jsdelivr.net/gh/coliff/freshdesk-messaging-facade/).
+  A. Yep, it's available on [JSDelivr](https://cdn.jsdelivr.net/npm/freshdesk-messaging-facade/).
 
 - **Q. Does it work in IE 11?**
 
-  A. No, but you can easily load the standard Freshdesk Messaging widget and add the `nomodule` attribute to it as a fallback for legacy browsers.
+  A. No, but you can easily load the standard Freshdesk Messaging widget and add the `nomodule` attribute to it as a fallback for legacy browsers. [View Gist](https://gist.github.com/coliff/fe18a182c8224d8d92ae1c31a31d756f)
 
 ## Known Issues
 
-- Some content blockers on iOS may block the real Freshdesk Messaging widget leading to the facade being non-functioning.
+- Some content blockers on iOS may block the Freshdesk Messaging widget leading to the facade being non-functioning.
 
 - The Freshdesk Messaging widget and assets are large so it can take a couple of seconds for them to load.
 

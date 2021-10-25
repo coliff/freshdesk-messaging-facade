@@ -61,6 +61,12 @@ class FreshchatFacade extends HTMLElement {
         },
       },
     });
+
+    // Hide the facade once the real one has loaded
+    fcWidget.on("widget:opened", function (resp) {
+      console.log("Widget Opened");
+      document.getElementById("freshdesk-messaging-facade").setAttribute("hidden", "hidden");
+    });
   }
 }
 
