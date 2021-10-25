@@ -1,7 +1,7 @@
 {
   "name": "freshdesk-messaging-facade",
-  "version": "1.0.0",
-  "description": "A faster Freshdesk Messaging (formerly Freshchat) Facade",
+  "version": "1.1.0",
+  "description": "A faster Freshdesk Messaging (formerly Freshchat) embed",
   "homepage": "https://github.com/coliff/freshdesk-messaging-facade#readme",
   "bugs": {
     "url": "https://github.com/coliff/freshdesk-messaging-facade/issues"
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "clean-css-cli": "^5.4.2",
-    "eslint": "^8.0.1",
+    "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1",
