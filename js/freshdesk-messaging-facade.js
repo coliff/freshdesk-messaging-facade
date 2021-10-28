@@ -1,5 +1,5 @@
 /*!
- * Freshdesk Messaging Facade v1.1.0 (https://github.com/coliff/freshdesk-messaging-facade)
+ * Freshdesk Messaging Facade v1.2.0 (https://github.com/coliff/freshdesk-messaging-facade)
  */
 
 // it's hidden by default for browsers with JavaScript disabled
@@ -15,12 +15,12 @@ class FreshchatFacade extends HTMLElement {
       once: true,
     });
 
-    this.addEventListener("pointerover", (e) => this.addScript());
+    this.addEventListener("pointerover", () => this.addScript());
   }
 
   // Add a <link rel=preconnect ...> to the head
   static addPrefetch(kind, url, as) {
-    const linkEl = document.createElement("link");
+    var linkEl = document.createElement("link");
     linkEl.rel = kind;
     linkEl.href = url;
     if (as) {
@@ -37,7 +37,7 @@ class FreshchatFacade extends HTMLElement {
   }
 
   addScript() {
-    const script = document.createElement("script");
+    var script = document.createElement("script");
     script.src = "https://wchat.freshchat.com/js/widget.js";
     document.head.append(script);
 
@@ -63,8 +63,7 @@ class FreshchatFacade extends HTMLElement {
     });
 
     // Hide the facade once the real one has loaded
-    fcWidget.on("widget:opened", function (resp) {
-      console.log("Widget Opened");
+    fcWidget.on("widget:opened", function () {
       document.getElementById("freshdesk-messaging-facade").setAttribute("hidden", "hidden");
     });
   }
