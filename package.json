@@ -16,6 +16,7 @@
   },
   "license": "MIT",
   "author": "Christian Oliff (https://christianoliff.com)",
+  "main": "js/freshdesk-messaging-facade.min.js",
   "files": [
     "css/*",
     "js/*",
