@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.2.0
+
+- Hide CSS outline on focus state
+- ESLint config tweak
+- JavaScript micro-optimizations
+
 ## v1.1.0
 
 - Add a simple animated SVG while script loads
