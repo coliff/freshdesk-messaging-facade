@@ -36,7 +36,7 @@
     "test": "npm run css-lint && npm run js-lint"
   },
   "devDependencies": {
-    "clean-css-cli": "^5.4.2",
+    "clean-css-cli": "^5.5.0",
     "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
