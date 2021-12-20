@@ -64,7 +64,7 @@ https://coliff.github.io/freshdesk-messaging-facade/
 
 - **Q. Can I load this from a CDN?**
 
-  A. Yep, it's available on [JSDelivr](https://cdn.jsdelivr.net/npm/freshdesk-messaging-facade/).
+  A. Yep, it's available on [JSDelivr](https://www.jsdelivr.com/package/npm/freshdesk-messaging-facade).
 
 - **Q. Does it work in IE 11?**
 
