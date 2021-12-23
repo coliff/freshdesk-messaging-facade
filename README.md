@@ -21,7 +21,7 @@ This facade (less than 1 KB gzipped) prevents Freshdesk's JavaScript from loadin
 
 ## How it works
 
-A div with an inline SVG of the Freshdesk Messaging icon is displayed in the bottom corner - appearing just like the real thing. When a user hovers within 300 pixels of it loads the Freshdesk Messaging script. A simple animated icon is displayed as the script loads.
+A div with an inline SVG of the Freshdesk Messaging icon is displayed in the bottom corner - appearing just like the real thing. When a user hovers within 200 pixels of it loads the Freshdesk Messaging script. A simple animated icon is displayed as the script loads.
 
 ## Quick start
 
