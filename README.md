@@ -38,7 +38,7 @@ Several quick start options are available:
 1. Load the CSS and JS in your head:
 
    ```html
-   <link rel="stylesheet" href="css/freshdesk-messaging-facade.min.css">
+   <link rel="stylesheet" href="css/freshdesk-messaging-facade.min.css" media="screen">
    <script src="js/freshdesk-messaging-facade.min.js" type="module" async></script>
    ```
 
