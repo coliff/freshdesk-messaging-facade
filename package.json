@@ -27,7 +27,7 @@
   "scripts": {
     "build": "npm run css && npm run js",
     "css": "npm run css-lint && npm run css-minify",
-    "css-lint": "stylelint \"css/*.css\" --fix",
+    "css-lint": "stylelint \"css/*.css\"",
     "css-minify": "cleancss --format breakWith=lf --output css/freshdesk-messaging-facade.min.css css/freshdesk-messaging-facade.css",
     "js": "npm run js-lint && npm run js-minify",
     "js-lint": "eslint js/freshdesk-messaging-facade.js --fix",
@@ -36,14 +36,14 @@
     "test": "npm run css-lint && npm run js-lint"
   },
   "devDependencies": {
-    "clean-css-cli": "^5.5.2",
-    "eslint": "^8.13.0",
+    "clean-css-cli": "^5.6.0",
+    "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.6.1",
-    "stylelint": "^14.7.1",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.9.1",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^25.0.0",
-    "terser": "^5.12.1"
+    "stylelint-config-standard": "^26.0.0",
+    "terser": "^5.14.1"
   }
 }
