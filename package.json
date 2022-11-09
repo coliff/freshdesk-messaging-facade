@@ -37,12 +37,12 @@
   },
   "devDependencies": {
     "clean-css-cli": "^5.6.1",
-    "eslint": "^8.26.0",
+    "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
-    "stylelint": "^14.14.0",
-    "stylelint-config-prettier": "^9.0.3",
+    "stylelint": "^14.14.1",
+    "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-standard": "^29.0.0",
     "terser": "^5.15.1"
   }
