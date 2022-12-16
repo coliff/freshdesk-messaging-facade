@@ -3,7 +3,6 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![NPM Version](https://img.shields.io/npm/v/freshdesk-messaging-facade)](https://www.npmjs.com/package/freshdesk-messaging-facade)
 [![NPM Downloads](https://img.shields.io/npm/dt/freshdesk-messaging-facade.svg)](https://www.npmjs.com/package/freshdesk-messaging-facade)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/coliff/freshdesk-messaging-facade.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/coliff/freshdesk-messaging-facade/context:javascript)
 
 # Freshdesk Messaging (formerly Freshchat) Facade
 
