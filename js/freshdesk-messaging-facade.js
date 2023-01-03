@@ -10,6 +10,7 @@ class FreshchatFacade extends HTMLElement {
   connectedCallback() {
     this.siteId = this.getAttribute("data-siteid");
     this.token = this.getAttribute("data-token");
+    this.host = this.getAttribute("data-host") || "https://wchat.freshchat.com";
 
     this.addEventListener("pointerover", FreshchatFacade.warmConnections, {
       once: true,
@@ -31,7 +32,7 @@ class FreshchatFacade extends HTMLElement {
 
   static warmConnections() {
     if (FreshchatFacade.preconnected) return;
-    FreshchatFacade.addPrefetch("preconnect", "https://wchat.freshchat.com");
+    FreshchatFacade.addPrefetch("preconnect", this.host);
     FreshchatFacade.addPrefetch("preconnect", "https://assetscdn-wchat.freshchat.com");
     FreshchatFacade.preconnected = true;
   }
@@ -53,7 +54,7 @@ class FreshchatFacade extends HTMLElement {
 
     fcWidget.init({
       token: this.token,
-      host: "https://wchat.freshchat.com",
+      host: this.host,
       siteId: this.siteId,
       config: {
         headerProperty: {
