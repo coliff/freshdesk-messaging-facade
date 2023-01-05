@@ -49,7 +49,9 @@ Several quick start options are available:
    </freshdesk-messaging-facade>
    ```
 
-   Add your 36-digit Freshdesk Messaging token to the `data-token` and your site's id to `data-siteid`
+   Add your 36-digit Freshdesk Messaging token to the `data-token` and your site's id to `data-siteid`.
+
+   You can optionally add a `data-host` attribute to set the host of the widget. The default is `https://wchat.freshchat.com`.
 
 ## Demo
 
