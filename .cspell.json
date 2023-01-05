@@ -1,0 +1,18 @@
+{
+  "version": "0.2",
+  "words": [
+    "Epqzn",
+    "Freshchat",
+    "Freshdesk",
+    "gzipped",
+    "preconnected",
+    "siteid",
+    "Yoksel"
+  ],
+  "language": "en,en-US",
+  "ignorePaths": [
+    ".cspell.json",
+    "**/node_modules/**"
+  ],
+  "useGitignore": true
+}
