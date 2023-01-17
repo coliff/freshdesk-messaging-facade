@@ -1,5 +1,5 @@
 /*!
- * Freshdesk Messaging Facade v1.2.1 (https://github.com/coliff/freshdesk-messaging-facade)
+ * Freshdesk Messaging Facade v1.3.0 (https://github.com/coliff/freshdesk-messaging-facade)
  */
 
 // it's hidden by default for browsers with JavaScript disabled

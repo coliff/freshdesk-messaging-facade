@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.3.0
+
+- Add optional `data-host` attribute to the facade to set the host of the widget. The default is `https://wchat.freshchat.com`.
+
 ## v1.2.1
 
 - Reduce size of outer div to help prevent potential overlapping issues with other components
