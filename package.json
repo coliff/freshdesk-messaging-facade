@@ -11,8 +11,8 @@
     "url": "git+https://github.com/coliff/freshdesk-messaging-facade.git"
   },
   "funding": {
-    "type": "PayPal",
-    "url": "https://paypal.me/coliff"
+    "type": "github",
+    "url": "https://github.com/sponsors/coliff"
   },
   "license": "MIT",
   "author": "Christian Oliff (https://christianoliff.com)",
@@ -36,14 +36,13 @@
     "test": "npm run css-lint && npm run js-lint"
   },
   "devDependencies": {
-    "clean-css-cli": "^5.6.1",
-    "eslint": "^8.32.0",
-    "eslint-config-prettier": "^8.5.0",
+    "clean-css-cli": "^5.6.2",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.3",
-    "stylelint": "^14.16.1",
-    "stylelint-config-prettier": "^9.0.4",
-    "stylelint-config-standard": "^29.0.0",
-    "terser": "^5.16.1"
+    "prettier": "^2.8.4",
+    "stylelint": "^15.2.0",
+    "stylelint-config-standard": "^30.0.1",
+    "terser": "^5.16.4"
   }
 }
