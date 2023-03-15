@@ -6,9 +6,6 @@ on:
   pull_request:
     branches: [ main ]
 
-permissions:  # added using https://github.com/step-security/secure-workflows
-  contents: read
-
 jobs:
   analyze:
     name: Analyze
@@ -21,11 +18,17 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        persist-credentials: false
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
       with:
         languages: 'javascript'
+        queries: +security-and-quality
+
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v2
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
