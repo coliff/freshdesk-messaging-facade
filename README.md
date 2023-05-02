@@ -4,23 +4,23 @@
 [![NPM Version](https://img.shields.io/npm/v/freshdesk-messaging-facade)](https://www.npmjs.com/package/freshdesk-messaging-facade)
 [![NPM Downloads](https://img.shields.io/npm/dt/freshdesk-messaging-facade.svg)](https://www.npmjs.com/package/freshdesk-messaging-facade)
 
-# Freshdesk Messaging (formerly Freshchat) Facade
+# Freshdesk Messaging (Freshchat) Facade
 
-The [Freshdesk Messaging](https://developers.freshchat.com/web-sdk/) widget loads more than 1.1 MB (gzipped) of JavaScript on page-load.
+The [Freshchat](https://developers.freshchat.com/web-sdk/) widget loads more than 1.1 MB (gzipped) of JavaScript on page-load.
 
-This facade (less than 1 KB gzipped) prevents Freshdesk's JavaScript from loading until the chat widget is hovered over saving your users a lot of bandwidth and substantially improving page-load times.
+This facade (less than 1 KB gzipped) prevents Freshchat's JavaScript from loading until the chat widget is hovered over saving your users a lot of bandwidth and substantially improving page-load times.
 
 ## Comparison
 
-|                       | Freshdesk Messaging JS | Freshdesk Messaging Facade |
-| --------------------- | ---------------------- | -------------------------- |
-| Number of assets      | 28                     | 2                          |
-| Page Complete         | 6.3 s                  | 1.1 s                      |
-| Network Transfer size | 1097 KB                | 1 KB                       |
+|                       | Freshchat JS | Freshchat Facade |
+| --------------------- | ------------ | ---------------- |
+| Number of assets      | 28           | 2                |
+| Page Complete         | 6.3 s        | 1.1 s            |
+| Network Transfer size | 1097 KB      | 1 KB             |
 
 ## How it works
 
-A div with an inline SVG of the Freshdesk Messaging icon is displayed in the bottom corner - appearing just like the real thing. When a user hovers within 200 pixels of it loads the Freshdesk Messaging script. A simple animated icon is displayed as the script loads.
+A div with an inline SVG of the Freshchat icon is displayed in the bottom corner - appearing just like the real thing. When a user hovers within 200 pixels of it loads the Freshdesk Messaging script. A simple animated icon is displayed as the script loads.
 
 ## Quick start
 
@@ -49,7 +49,7 @@ Several quick start options are available:
    </freshdesk-messaging-facade>
    ```
 
-   Add your 36-digit Freshdesk Messaging token to the `data-token` and your site's id to `data-siteid`.
+   Add your 36-digit Freshchat token to the `data-token` and your site's id to `data-siteid`.
 
    You can optionally add a `data-host` attribute to set the host of the widget. The default is `https://wchat.freshchat.com`.
 

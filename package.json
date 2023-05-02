@@ -1,7 +1,7 @@
 {
   "name": "freshdesk-messaging-facade",
   "version": "1.3.0",
-  "description": "A faster Freshdesk Messaging (formerly Freshchat) embed",
+  "description": "A faster Freshdesk Messaging (Freshchat) embed",
   "homepage": "https://github.com/coliff/freshdesk-messaging-facade#readme",
   "bugs": {
     "url": "https://github.com/coliff/freshdesk-messaging-facade/issues"
