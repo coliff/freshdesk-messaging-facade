@@ -10,10 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/coliff/freshdesk-messaging-facade.git"
   },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/coliff"
-  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/coliff"
+    },
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.com/paypalme/coliff"
+    }
+  ],
   "license": "MIT",
   "author": "Christian Oliff (https://christianoliff.com)",
   "main": "js/freshdesk-messaging-facade.min.js",
@@ -33,16 +39,16 @@
     "js-lint": "eslint js/freshdesk-messaging-facade.js --fix",
     "js-minify": "terser --keep-classnames --keep-fnames --output js/freshdesk-messaging-facade.min.js -- js/freshdesk-messaging-facade.js",
     "prettier": "prettier --write \"*.*\"",
-    "test": "npm run css-lint && npm run js-lint"
+    "test": "npm run prettier && npm run css-lint && npm run js-lint"
   },
   "devDependencies": {
     "clean-css-cli": "^5.6.2",
-    "eslint": "^8.39.0",
+    "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.8",
-    "stylelint": "^15.6.0",
+    "stylelint": "^15.6.2",
     "stylelint-config-standard": "^33.0.0",
-    "terser": "^5.17.1"
+    "terser": "^5.17.6"
   }
 }
