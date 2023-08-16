@@ -3,3 +3,5 @@
 *.min.js
 *.min.css
 *.html
+
+package-lock.json
