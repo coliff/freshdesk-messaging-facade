@@ -1,7 +1,6 @@
 {
   "root": true,
   "extends": ["eslint:recommended", "prettier"],
-  "plugins": ["prettier"],
   "parserOptions": {
     "ecmaVersion": 2015
   },
@@ -9,7 +8,6 @@
     "es6": true
   },
   "rules": {
-    "prettier/prettier": ["warn"],
     "no-undef": "off",
     "no-unused-vars": "off"
   }
