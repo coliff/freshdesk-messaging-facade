@@ -9,22 +9,22 @@
 }
 
 #freshdesk-messaging-icon {
-  animation-fill-mode: both;
   animation-duration: 0.5s;
+  animation-fill-mode: both;
   animation-name: zoom;
-  border: 0;
-  border-radius: 34px 8px 34px 34px;
-  bottom: 6px;
-  box-shadow: 0 5px 4px 0 rgb(0 0 0 / 26%);
   background-color: #12344d;
-  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 70 70'%3E%3Cg%3E%3Cg%3E%3Cpath fill='transparent' d='M35,0H61.3a8.76,8.76,0,0,1,8.76,8.76V35a35,35,0,0,1-35,35h0A35,35,0,0,1,0,35v0A35,35,0,0,1,35,0Z' /%3E%3Cpath fill='%23fff' d='M45.77,22.23H28.26A8.76,8.76,0,0,0,19.5,31V45.89a1.94,1.94,0,0,0,1.95,1.94H45.77a8.76,8.76,0,0,0,8.76-8.76V31A8.76,8.76,0,0,0,45.77,22.23ZM39.45,41H26.8a1.7,1.7,0,1,1,0-3.4H39.45a1.7,1.7,0,0,1,0,3.4Zm7.78-8.33H26.8a1.71,1.71,0,1,1,0-3.41H47.23a1.71,1.71,0,0,1,0,3.41Z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 70 70'%3E%3Cg%3E%3Cg%3E%3Cpath fill='transparent' d='M35,0H61.3a8.76,8.76,0,0,1,8.76,8.76V35a35,35,0,0,1-35,35h0A35,35,0,0,1,0,35v0A35,35,0,0,1,35,0Z' /%3E%3Cpath fill='%23fff' d='M45.77,22.23H28.26A8.76,8.76,0,0,0,19.5,31V45.89a1.94,1.94,0,0,0,1.95,1.94H45.77a8.76,8.76,0,0,0,8.76-8.76V31A8.76,8.76,0,0,0,45.77,22.23ZM39.45,41H26.8a1.7,1.7,0,1,1,0-3.4H39.45a1.7,1.7,0,0,1,0,3.4Zm7.78-8.33H26.8a1.71,1.71,0,1,1,0-3.41H47.23a1.71,1.71,0,0,1,0,3.41Z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 34px 8px 34px 34px;
+  border: 0;
+  bottom: 6px;
+  box-shadow: 0 5px 4px 0 rgb(0 0 0 / 26%);
   cursor: pointer;
   height: 60px;
-  width: 60px;
   position: absolute;
   right: 5px;
+  width: 60px;
   z-index: 9999;
 }
 
