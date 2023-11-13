@@ -32,16 +32,16 @@
     "js": "npm run js-lint && npm run js-minify",
     "js-lint": "eslint js/freshdesk-messaging-facade.js --fix",
     "js-minify": "terser --keep-classnames --keep-fnames --output js/freshdesk-messaging-facade.min.js -- js/freshdesk-messaging-facade.js",
-    "prettier": "prettier --write \"*.*\"",
+    "prettier": "prettier --write \"*.{css,js,json,scss,yml}\"",
     "test": "npm run prettier && npm run css-lint && npm run js-lint"
   },
   "devDependencies": {
     "clean-css-cli": "^5.6.2",
-    "eslint": "^8.50.0",
+    "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
-    "prettier": "^3.0.2",
-    "stylelint": "^15.10.2",
+    "prettier": "3.1.0",
+    "stylelint": "^15.11.0",
     "stylelint-config-standard": "^34.0.0",
-    "terser": "^5.19.2"
+    "terser": "^5.24.0"
   }
 }
