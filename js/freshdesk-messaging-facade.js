@@ -21,7 +21,7 @@ class FreshchatFacade extends HTMLElement {
 
   // Add a <link rel=preconnect ...> to the head
   static addPrefetch(kind, url, as) {
-    var linkEl = document.createElement("link");
+    const linkEl = document.createElement("link");
     linkEl.rel = kind;
     linkEl.href = url;
     if (as) {
@@ -38,7 +38,7 @@ class FreshchatFacade extends HTMLElement {
   }
 
   addScript() {
-    var script = document.createElement("script");
+    const script = document.createElement("script");
     script.src = "https://wchat.freshchat.com/js/widget.js";
     document.head.append(script);
 
