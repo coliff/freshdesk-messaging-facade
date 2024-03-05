@@ -44,6 +44,6 @@
     "prettier": "3.2.5",
     "stylelint": "^16.0.2",
     "stylelint-config-standard": "^35.0.0",
-    "terser": "^5.26.0"
+    "terser": "^5.28.1"
   }
 }
