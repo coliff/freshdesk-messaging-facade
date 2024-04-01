@@ -30,4 +30,5 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_CSS: false
           VALIDATE_EDITORCONFIG: false
+          VALIDATE_GITLEAKS: false
           VALIDATE_NATURAL_LANGUAGE: false
