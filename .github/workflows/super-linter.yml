@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+
 jobs:
   build:
     name: Lint Code Base
@@ -30,7 +33,6 @@ jobs:
           MARKDOWN_CONFIG_FILE: .markdownlint.json
           SUPPRESS_POSSUM: true
           VALIDATE_ALL_CODEBASE: false
-          VALIDATE_CHECKOV: false
           VALIDATE_CSS: false
           VALIDATE_EDITORCONFIG: false
           VALIDATE_GITLEAKS: false
