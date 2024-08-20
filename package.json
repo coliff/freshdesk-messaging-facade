@@ -39,7 +39,7 @@
     "test": "npm run prettier && npm run css-lint && npm run js-lint"
   },
   "devDependencies": {
-    "@eslint/js": "9.0.0",
+    "@eslint/js": "9.9.0",
     "clean-css-cli": "^5.6.3",
     "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.1.0",
