@@ -2,11 +2,10 @@ import js from "@eslint/js";
 import globals from "globals";
 import eslintConfigPrettier from "eslint-config-prettier";
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
   {
     files: ["**/*.js"],
-    ignores: ["*.min.js"],
+    ignores: ["**/*.min.js"],
     languageOptions: {
       ecmaVersion: 2015,
       sourceType: "module",
