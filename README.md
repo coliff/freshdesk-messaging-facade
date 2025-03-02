@@ -1,8 +1,8 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/coliff/freshdesk-messaging-facade/main/LICENSE)
 [![GitHub Super-Linter](https://github.com/coliff/freshdesk-messaging-facade/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![NPM Version](https://img.shields.io/npm/v/freshdesk-messaging-facade)](https://www.npmjs.com/package/freshdesk-messaging-facade)
-[![NPM Downloads](https://img.shields.io/npm/dt/freshdesk-messaging-facade.svg)](https://www.npmjs.com/package/freshdesk-messaging-facade)
+[![npm Version](https://img.shields.io/npm/v/freshdesk-messaging-facade)](https://www.npmjs.com/package/freshdesk-messaging-facade)
+[![npm Downloads](https://img.shields.io/npm/dt/freshdesk-messaging-facade.svg)](https://www.npmjs.com/package/freshdesk-messaging-facade)
 
 # Freshdesk Messaging (Freshchat) Facade
 

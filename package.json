@@ -28,10 +28,12 @@
     "build": "npm run css && npm run js",
     "css": "npm run css-lint && npm run css-minify",
     "css-lint": "stylelint \"css/*.css\" --fix -f verbose",
+    "css-lint-fix": "stylelint \"css/*.css\" --fix -f verbose",
     "css-minify": "cleancss --format breakWith=lf --output css/freshdesk-messaging-facade.min.css css/freshdesk-messaging-facade.css",
     "htmlhint": "npx htmlhint index.html",
     "js": "npm run js-lint && npm run js-minify",
-    "js-lint": "eslint js/freshdesk-messaging-facade.js --fix",
+    "js-lint": "eslint",
+    "js-lint-fix": "eslint --fix",
     "js-minify": "terser --keep-classnames --keep-fnames --output js/freshdesk-messaging-facade.min.js -- js/freshdesk-messaging-facade.js",
     "pa11y": "npx pa11y https://coliff.github.io/freshdesk-messaging-facade/",
     "prettier": "prettier --write \"*.{css,js,json,scss,yml}\"",
@@ -40,12 +42,15 @@
   },
   "devDependencies": {
     "@eslint/js": "9.0.0",
-    "clean-css-cli": "^5.6.3",
-    "eslint": "^9.0.0",
-    "eslint-config-prettier": "^9.1.0",
+    "clean-css-cli": "5.6.3",
+    "eslint": "9.21.0",
+    "eslint-config-prettier": "10.0.2",
     "prettier": "3.4.2",
-    "stylelint": "^16.15.0",
-    "stylelint-config-standard": "^36.0.0",
-    "terser": "^5.30.1"
+    "stylelint": "16.15.0",
+    "stylelint-config-standard": "37.0.0",
+    "terser": "5.39.0"
+  },
+  "volta": {
+    "node": "20.18.3"
   }
 }
