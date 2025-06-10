@@ -30,6 +30,7 @@
     "css-lint": "stylelint \"css/*.css\" --fix -f verbose",
     "css-lint-fix": "stylelint \"css/*.css\" --fix -f verbose",
     "css-minify": "cleancss --format breakWith=lf --output css/freshdesk-messaging-facade.min.css css/freshdesk-messaging-facade.css",
+    "full": "npm i && npm run prettier && npm run css && npm run js",
     "htmlhint": "npx htmlhint index.html",
     "js": "npm run js-lint && npm run js-minify",
     "js-lint": "eslint",
@@ -38,7 +39,7 @@
     "pa11y": "npx pa11y https://coliff.github.io/freshdesk-messaging-facade/",
     "prettier": "prettier --write \"*.{css,js,json,scss,yml}\"",
     "serve": "npx http-server -o -p 8080 -c-1",
-    "test": "npm run prettier && npm run css-lint && npm run js-lint"
+    "test": "npm run css-lint && npm run css-minify && npm run js-lint && npm run js-minify"
   },
   "devDependencies": {
     "@eslint/js": "9.28.0",
