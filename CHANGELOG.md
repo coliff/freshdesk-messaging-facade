@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.3.1
+
+- Fix Uncaught ReferenceError: fcWidget is not defined error
+- Improve the display of the Freshchat icon so it matches the rest of the widget
+
 ## v1.3.0
 
 - Add optional `data-host` attribute to the facade to set the host of the widget. The default is `https://wchat.freshchat.com`.
