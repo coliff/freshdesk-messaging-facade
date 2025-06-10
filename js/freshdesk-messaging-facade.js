@@ -50,11 +50,9 @@ class FreshchatFacade extends HTMLElement {
       // display a loading spinner when script is loading
       document.getElementById("freshdesk-messaging-icon").classList.add("freshdesk-messaging-icon-loading");
 
-      // eslint-disable-next-line no-undef
       fcWidget.init({ token: this.token, host: this.host, siteId: this.siteId, config: { headerProperty: { hideChatButton: false } } });
 
       // Hide the facade once the real one has loaded
-      // eslint-disable-next-line no-undef
       fcWidget.on("widget:opened", function () {
         document.getElementById("freshdesk-messaging-facade").setAttribute("hidden", "hidden");
       });
