@@ -17,14 +17,7 @@
 .idea
 .project
 .settings
-.tmproj
-*.esproj
-*.sublime-project
-*.sublime-workspace
-nbproject
 Thumbs.db
 
 # folders
 /node_modules/
-/temp/
-/tests/
