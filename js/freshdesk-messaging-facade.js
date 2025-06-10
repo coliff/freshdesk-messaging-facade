@@ -1,5 +1,5 @@
 /*!
- * Freshdesk Messaging Facade v1.3.0 (https://github.com/coliff/freshdesk-messaging-facade)
+ * Freshdesk Messaging Facade v1.3.1 (https://github.com/coliff/freshdesk-messaging-facade)
  */
 
 // it's hidden by default for browsers with JavaScript disabled
@@ -12,9 +12,7 @@ class FreshchatFacade extends HTMLElement {
     this.token = this.getAttribute("data-token");
     this.host = this.getAttribute("data-host") || "https://wchat.freshchat.com";
 
-    this.addEventListener("pointerover", FreshchatFacade.warmConnections, {
-      once: true,
-    });
+    this.addEventListener("pointerover", FreshchatFacade.warmConnections, { once: true });
 
     this.addEventListener("pointerover", () => this.addScript());
   }
@@ -53,16 +51,7 @@ class FreshchatFacade extends HTMLElement {
       document.getElementById("freshdesk-messaging-icon").classList.add("freshdesk-messaging-icon-loading");
 
       // eslint-disable-next-line no-undef
-      fcWidget.init({
-        token: this.token,
-        host: this.host,
-        siteId: this.siteId,
-        config: {
-          headerProperty: {
-            hideChatButton: false,
-          },
-        },
-      });
+      fcWidget.init({ token: this.token, host: this.host, siteId: this.siteId, config: { headerProperty: { hideChatButton: false } } });
 
       // Hide the facade once the real one has loaded
       // eslint-disable-next-line no-undef
