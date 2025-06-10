@@ -1,5 +1,5 @@
 /*!
- * Freshdesk Messaging Facade v1.3.1 (https://github.com/coliff/freshdesk-messaging-facade)
+ * Freshdesk Messaging Facade v1.3.2 (https://github.com/coliff/freshdesk-messaging-facade)
  */
 
 // it's hidden by default for browsers with JavaScript disabled
@@ -14,7 +14,7 @@ class FreshchatFacade extends HTMLElement {
 
     this.addEventListener("pointerover", FreshchatFacade.warmConnections, { once: true });
 
-    this.addEventListener("pointerover", () => this.addScript());
+    this.addEventListener("pointerover", () => this.addScript(), { once: true });
   }
 
   // Add a <link rel=preconnect ...> to the head

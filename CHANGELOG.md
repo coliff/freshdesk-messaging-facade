@@ -1,4 +1,8 @@
-# CHANGELOG
+# Changelog
+
+## v1.3.2
+
+- Fix bug where re-hovering over the facade reloads widget.js
 
 ## v1.3.1
 
