@@ -12,6 +12,7 @@ export default [
       globals: {
         ...globals.browser,
         myCustomGlobal: "readonly",
+        fcWidget: "readonly",
       },
     },
     rules: {
