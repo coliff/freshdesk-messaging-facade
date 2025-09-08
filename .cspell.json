@@ -1,6 +1,7 @@
 {
   "version": "0.2",
   "words": [
+    "autobuild",
     "Ccircle",
     "christianoliff",
     "cleancss",
@@ -16,7 +17,9 @@
     "Freshdesk",
     "gzipped",
     "htmlhint",
+    "npmjs",
     "Oliff",
+    "ossf",
     "preconnected",
     "sarif",
     "siteid",
