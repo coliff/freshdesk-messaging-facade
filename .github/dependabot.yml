@@ -5,6 +5,14 @@ updates:
     schedule:
       interval: monthly
     versioning-strategy: increase
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
