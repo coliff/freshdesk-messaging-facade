@@ -42,11 +42,11 @@
     "test": "npm run css-lint && npm run css-minify && npm run js-lint && npm run js-minify"
   },
   "devDependencies": {
-    "@eslint/js": "9.39.1",
+    "@eslint/js": "9.39.2",
     "clean-css-cli": "5.6.3",
-    "eslint": "9.39.1",
+    "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
-    "prettier": "3.7.3",
+    "prettier": "3.7.4",
     "stylelint": "16.26.1",
     "stylelint-config-standard": "38.0.0",
     "terser": "5.44.1"
