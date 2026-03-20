@@ -1,0 +1,6 @@
+export default {
+  extends: ["stylelint-config-standard"],
+  rules: {
+    "alpha-value-notation": null,
+  },
+};

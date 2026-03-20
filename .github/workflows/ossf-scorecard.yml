@@ -2,9 +2,9 @@ name: Scorecard supply-chain security
 on:
   branch_protection_rule:
   schedule:
-    - cron: '27 12 * * 2'
+    - cron: "27 12 * * 2"
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 permissions: read-all
 
@@ -30,7 +30,6 @@ jobs:
           results_format: sarif
           publish_results: true
 
-
       - name: "Upload artifact"
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
@@ -39,6 +38,6 @@ jobs:
           retention-days: 5
 
       - name: "Upload to code-scanning"
-        uses: github/codeql-action/upload-sarif@89a39a4e59826350b863aa6b6252a07ad50cf83e # v4.32.4
+        uses: github/codeql-action/upload-sarif@b1bff81932f5cdfc8695c7752dcee935dcd061c8 # v4.33.0
         with:
           sarif_file: results.sarif

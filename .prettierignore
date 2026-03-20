@@ -1,5 +1,5 @@
-.*
-
+/.vscode/
+.cspell.json
 *.min.js
 *.min.css
 *.html
