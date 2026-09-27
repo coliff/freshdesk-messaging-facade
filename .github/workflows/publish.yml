@@ -11,6 +11,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     if: github.repository == 'coliff/freshdesk-messaging-facade'
+    environment: npm
     permissions:
       contents: read
       id-token: write
