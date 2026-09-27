@@ -38,6 +38,8 @@ class FreshchatFacade extends HTMLElement {
   addScript() {
     const script = document.createElement("script");
     script.src = "https://wchat.freshchat.com/js/widget.js";
+    script.integrity = "sha384-f+VbJalkI10wje05YGY2ZwnaUWfi5oqqP7jYCre2U0JSeiF//LwY9b/xnbEugNYZ";
+    script.crossOrigin = "anonymous";
     document.head.append(script);
 
     // hide the button if script fails to load
