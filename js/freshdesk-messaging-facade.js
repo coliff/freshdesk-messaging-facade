@@ -2,23 +2,19 @@
  * Freshdesk Messaging Facade v1.3.2 (https://github.com/coliff/freshdesk-messaging-facade)
  */
 
+// it's hidden by default for browsers with JavaScript disabled
+// this removes the hidden attribute
+document.getElementById("freshdesk-messaging-facade").removeAttribute("hidden");
+
 class FreshchatFacade extends HTMLElement {
   connectedCallback() {
-    // it's hidden by default for browsers with JavaScript disabled
-    // this removes the hidden attribute
-    this.removeAttribute("hidden");
-
     this.siteId = this.getAttribute("data-siteid");
     this.token = this.getAttribute("data-token");
     this.host = this.getAttribute("data-host") || "https://wchat.freshchat.com";
 
-    const load = () => {
-      FreshchatFacade.warmConnections(this.host);
-      this.addScript();
-    };
+    this.addEventListener("pointerover", FreshchatFacade.warmConnections, { once: true });
 
-    this.addEventListener("pointerover", load, { once: true });
-    this.addEventListener("focusin", load, { once: true });
+    this.addEventListener("pointerover", () => this.addScript(), { once: true });
   }
 
   // Add a <link rel=preconnect ...> to the head
@@ -32,48 +28,35 @@ class FreshchatFacade extends HTMLElement {
     document.head.append(linkEl);
   }
 
-  static warmConnections(host) {
-    if (FreshchatFacade.preconnected) {
-      return;
-    }
-    FreshchatFacade.addPrefetch("preconnect", host);
+  static warmConnections() {
+    if (FreshchatFacade.preconnected) return;
+    FreshchatFacade.addPrefetch("preconnect", this.host);
     FreshchatFacade.addPrefetch("preconnect", "https://assetscdn-wchat.freshchat.com");
     FreshchatFacade.preconnected = true;
   }
 
   addScript() {
-    // only load the widget script once (pointer and focus can both trigger this)
-    if (this.scriptAdded) {
-      return;
-    }
-    this.scriptAdded = true;
-
-    const icon = this.querySelector("#freshdesk-messaging-icon");
-
-    // display a loading spinner while the script is loading
-    if (icon) {
-      icon.classList.add("freshdesk-messaging-icon-loading");
-    }
-
     const script = document.createElement("script");
     script.src = "https://wchat.freshchat.com/js/widget.js";
+    document.head.append(script);
 
     // hide the button if script fails to load
-    script.onerror = () => {
-      this.setAttribute("hidden", "hidden");
+    script.onerror = function () {
+      document.getElementById("freshdesk-messaging-facade").setAttribute("hidden", "hidden");
     };
 
     // Initialize widget after script loads
     script.onload = () => {
+      // display a loading spinner when script is loading
+      document.getElementById("freshdesk-messaging-icon").classList.add("freshdesk-messaging-icon-loading");
+
       fcWidget.init({ token: this.token, host: this.host, siteId: this.siteId, config: { headerProperty: { hideChatButton: false } } });
 
       // Hide the facade once the real one has loaded
-      fcWidget.on("widget:opened", () => {
-        this.setAttribute("hidden", "hidden");
+      fcWidget.on("widget:opened", function () {
+        document.getElementById("freshdesk-messaging-facade").setAttribute("hidden", "hidden");
       });
     };
-
-    document.head.append(script);
   }
 }
 
