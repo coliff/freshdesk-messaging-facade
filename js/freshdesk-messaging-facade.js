@@ -56,7 +56,7 @@ class FreshchatFacade extends HTMLElement {
     }
 
     const script = document.createElement("script");
-    script.src = `${this.host}/js/widget.js`;
+    script.src = "https://wchat.freshchat.com/js/widget.js";
 
     // hide the button if script fails to load
     script.onerror = () => {
